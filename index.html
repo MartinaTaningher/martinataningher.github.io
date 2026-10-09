@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martina's Portfolio</title>
+
+    <!-- Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="presentazione">
+            <div class="presentazione-testo">
+                <span class="subtitle">Junior Software/Game Developer</span>
+                <h1>Hi, I'm MARTINA</h1>
+
+                <!-- About Me Section -->
+                <div id="about">
+                    <h3 class="neon-subtitle">About Me</h3>
+                    <p>I am a <strong class="highlight-neon">Software and Game Developer</strong> driven by the challenge of turning complex ideas into seamless interactive experiences. With a STEM degree in <strong>Media Science and Technology (Computer Science focus)</strong> from the University of Rome Tor Vergata, I love bridging the gap between <strong>solid software architecture</strong> and <strong>engaging game design</strong>.</p>
+                </div>
+
+                <!-- Skills Section -->
+                <div style="margin-bottom: 30px;">
+                    <h3 class="neon-subtitle">Skills</h3>
+                    <p>My technical toolkit spans from software architecture and game engines to 3D modeling and scientific computing:</p>
+
+                    <!-- Languages -->
+                    <div class="titolo-categoria-skill">Languages</div>
+                    <div class="contenitore-tags" style="gap: 10px;">
+                        <span class="tag-dettaglio">C#</span>
+                        <span class="tag-dettaglio">C++</span>
+                        <span class="tag-dettaglio">C</span>
+                        <span class="tag-dettaglio">Java</span>
+                        <span class="tag-dettaglio">Python</span>
+                        <span class="tag-dettaglio">HTML</span>
+                    </div>
+
+                    <!-- Software & Engines -->
+                    <div class="titolo-categoria-skill">Engines & Software</div>
+                    <div class="contenitore-tags" style="gap: 10px;">
+                        <span class="tag-dettaglio">Unity</span>
+                        <span class="tag-dettaglio">Visual Studio Community</span>
+                        <span class="tag-dettaglio">Autodesk Maya</span>
+                        <span class="tag-dettaglio">MATLAB</span>
+                    </div>
+
+                    <!-- Core Competencies -->
+                    <div class="titolo-categoria-skill">Core Competencies</div>
+                    <div class="contenitore-tags" style="gap: 10px;">
+                        <span class="tag-dettaglio">Game Design</span>
+                        <span class="tag-dettaglio">OOP</span>
+                        <span class="tag-dettaglio">Data Structures</span>
+                    </div>
+                </div>
+
+                <!-- <a href="#" class="btn-cv">Download CV</a>-->
+            </div>
+
+            <div class="presentazione-immagine">
+                <img src="assets/ProPic.jpg" alt="Martina" class="foto-profilo">
+            </div>
+        </header>
+
+        <!-- My Projects -->
+        <main id="projects" class="elenco-progetti">
+            <h2 class="titolo-sezione-principale">Academic Projects</h2>
+
+            <!-- Project 1: Starfall -->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-1">
+                        <img class="immagine-gioco active" src="assets/Starfall/1.png" alt="Progetto 1 - 1">
+                        <img class="immagine-gioco" src="assets/Starfall/2.png" alt="Progetto 1 - 2">
+                        <img class="immagine-gioco" src="assets/Starfall/3.png" alt="Progetto 1 - 3">
+                        <img class="immagine-gioco" src="assets/Starfall/4.png" alt="Progetto 1 - 4">
+                        <img class="immagine-gioco" src="assets/Starfall/Starfall_game.gif" alt="Progetto 1 - 5">
+                        <img class="immagine-gioco" src="assets/Starfall/8.png" alt="Progetto 1 - 6">
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-1', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-1', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Starfall</h2>
+                    <p class="descrizione-breve">
+                        <strong class="highlight-neon">Starfall</strong> is a <strong>2D narrative video game</strong> that bridges the gap between active player agency and structured storytelling. Developed as my thesis project to explore human storytelling instincts and intermediality, the game challenges players with <strong>ethical choices</strong> and <strong>mechanical obstacles</strong> that directly impact the narrative flow. Driven by an integrated storytelling engine, your decisions culminate in distinct, <strong>emotionally charged endings</strong>.
+                    </p>
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Gameplay Programming</span>
+                                <span class="tag-dettaglio">Narrative System</span>
+                                <span class="tag-dettaglio">Core Loop Design</span>
+                                <span class="tag-dettaglio">OOP Architecture</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Unity</span>
+                                <span class="tag-dettaglio">C#</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenitore-bottoni-progetto">
+                        <a href="https://tamaciachi.itch.io/starfall-project" target="_blank" class="btn-progetto">
+                            🎮 Play on Itch.io
+                        </a>
+                        <a href="https://github.com/MartinaTaningher/Starfall-Thesis-Project" target="_blank" class="btn-progetto">
+                            💻 View Code on GitHub
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Project 2: The Last Clean Up -->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-2">
+                        <img class="immagine-gioco active" src="assets/TLCU/TLCU_1.png" alt="Progetto 2 - 1">
+                        <img class="immagine-gioco" src="assets/TLCU/TLCU_2.png" alt="Progetto 2 - 2">
+                        <img class="immagine-gioco" src="assets/TLCU/TLCU_3.png" alt="Progetto 2 - 3">
+                        <img class="immagine-gioco" src="assets/TLCU/TLCU_4.png" alt="Progetto 2 - 4">
+                        <img class="immagine-gioco" src="assets/TLCU/TLCU_5.png" alt="Progetto 2 - 5">
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-2', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-2', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>The Last Clean Up</h2>
+                    <p class="descrizione-breve">
+                        An <strong class="highlight-neon">Applied Game</strong> developed as a team project. Players step into the shoes of a newly elected mayor tasked with transforming a polluted, concrete city into a green, sustainable urban environment. By completing <strong>puzzle-based minigames</strong>, players implement real-world <strong>Nature-Based Solutions (NBS)</strong> to combat smog and counter the environmental damage left by the previous administration.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Game Design</span>
+                                <span class="tag-dettaglio">Minigame Integration</span>
+                                <span class="tag-dettaglio">Puzzle Logic</span>
+                                <span class="tag-dettaglio">OOP Architecture</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Unity</span>
+                                <span class="tag-dettaglio">C#</span>
+                                <span class="tag-dettaglio">Inkle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenitore-bottoni-progetto">
+                        <a href="https://github.com/MartinaTaningher/TheLastCleanUp-Minigames" target="_blank" class="btn-progetto">
+                            💻 View Code on GitHub
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Project 3: Lighting Effects -->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-3">
+                        <img class="immagine-gioco active" src="assets/Church/Church_giorno.gif" alt="Progetto 3 - 1">
+                        <img class="immagine-gioco" src="assets/Church/Church_notte.gif" alt="Progetto 3 - 2">
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-3', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-3', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Lighting Effects</h2>
+                    <p class="descrizione-breve">
+                        A custom <strong>3D graphics engine</strong> built with <strong class="highlight-neon">C++ and OpenGL</strong>, featuring a <strong>real-time dynamic lighting system</strong>. The project renders a church interior, simulating the shifting patterns, colors, and movement of light filtering through a stained-glass rose window based on the time of day.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Graphics Programming</span>
+                                <span class="tag-dettaglio">Engine Architecture</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">C++</span>
+                                <span class="tag-dettaglio">OpenGL</span>
+                                <span class="tag-dettaglio">XML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Toy Room -->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" style="display: flex; justify-content: center;">
+                        <img class="immagine-gioco active" src="assets/ToyRoom.jpg" alt="Toy Room 3D Render" style="display: block;">
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Toy Room</h2>
+                    <p class="descrizione-breve">
+                        A <strong>3D modeling and rendering</strong> project showcasing a themed toy room. Developed entirely in <strong class="highlight-neon">Autodesk Maya</strong>, the project focuses on <strong>curve-based modeling (NURBS)</strong> techniques, generating smooth surfaces, and setting up a <strong>lighting composition</strong> to create a stylized atmosphere.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">3D Modeling</span>
+                                <span class="tag-dettaglio">Lighting</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Autodesk Maya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: Pong -->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-5">
+                        <img class="immagine-gioco active" src="assets/Pong/Pong_1.png" alt="Progetto 5 - 1">
+                        <img class="immagine-gioco" src="assets/Pong/Pong_game.gif" alt="Progetto 5 - 2">
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-5', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-5', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Pong</h2>
+                    <p class="descrizione-breve">
+                        A custom-built recreation of the classic arcade game <strong class="highlight-neon">Pong</strong>, developed independently using <strong>Python and Pygame</strong>. The project focuses on <strong>clean software architecture</strong>, precise <strong>2D collision detection</strong>, and <strong>responsive gameplay mechanics</strong>.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">2D Physics</span>
+                                <span class="tag-dettaglio">Arcade Logic</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Python</span>
+                                <span class="tag-dettaglio">PyGame</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 6: Hazbin Invaders-->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-6">
+                        <img class="immagine-gioco active" src="assets/Hazbin/Hazbin_1.png" alt="Progetto 6 - 1">
+                        <img class="immagine-gioco" src="assets/Hazbin/Hazbin_video.gif" alt="Progetto 6 - 2">
+                        <img class="immagine-gioco" src="assets/Hazbin/Hazbin_2.png" alt="Progetto 6 - 3">
+
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-6', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-6', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Hazbin Invaders</h2>
+                    <p class="descrizione-breve">
+                        A custom <strong class="highlight-neon">Java-based 2D arcade game</strong> developed independently as a themed reskin of the classic Space Invaders. Utilizing Java's native graphics and UI frameworks, the project features custom visual assets inspired by the series 'Hazbin Hotel', combining solid <strong>Object-Oriented Programming (OOP)</strong> principles with <strong>custom 2D rendering</strong>.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">UI Frameworks</span>
+                                <span class="tag-dettaglio">Asset Integration</span>
+                                <span class="tag-dettaglio">OOP Architecture</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 7: Conway's Game Of Life'-->
+            <article class="striscia-progetto">
+                <div class="zona-media">
+                    <div class="carousel-container" id="galleria-7">
+                        <img class="immagine-gioco active" src="assets/Conway/Conway_1.png" alt="Progetto 7 - 1">
+                        <img class="immagine-gioco" src="assets/Conway/Conway_game.gif" alt="Progetto 7 - 2">
+
+
+                        <button class="freccia prev" onclick="cambiaSlide('galleria-7', -1)">&#10094;</button>
+                        <button class="freccia next" onclick="cambiaSlide('galleria-7', 1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="zona-testo">
+                    <h2>Conway's Game of Life</h2>
+                    <p class="descrizione-breve">
+                        An independent implementation of <strong class="highlight-neon">Conway's Game of Life</strong>, focusing on <strong>cellular automata logic</strong>, <strong>matrix manipulation</strong>, and efficient <strong>state-rendering algorithms</strong>. The project simulates complex emergent behaviors from simple cellular rules on a dynamic, interactive grid.
+                    </p>
+
+                    <div class="dettagli-tecnici">
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Role:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Matrix Logic</span>
+                                <span class="tag-dettaglio">Algorithm Optimization</span>
+                            </div>
+                        </div>
+                        <div class="gruppo-dettaglio">
+                            <span class="titolo-dettaglio">Tools:</span>
+                            <div class="contenitore-tags">
+                                <span class="tag-dettaglio">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="sezione-contatti">
+            <h2>Let's Work Together</h2>
+
+            <!-- INCOLLA QUI LA TUA FRASE PREFERITA -->
+            <p class="descrizione-breve">I am currently open to new opportunities. Whether you have a position available or a project in mind, feel free to reach out!</p>
+
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+                <a href="mailto:martinataningher@gmail.com" class="btn-cv" style="margin-top: 0;">
+                    ✉️ Email Me
+                </a>
+                <a href="https://github.com/MartinaTaningher" target="_blank" class="btn-cv" style="margin-top: 0; background-color: var(--sfondo-card); border: 1px solid var(--primario);">
+                    💻 GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/martina-taningher" target="_blank" class="btn-cv" style="margin-top: 0; background-color: var(--sfondo-card); border: 1px solid var(--primario);">
+                    💼 LinkedIn
+                </a>
+            </div>
+
+            <div class="footer-credit">
+                <p>This website was designed by <span class="highlight-neon">Martina Taningher</span> - 2026</p>            
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- File JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
